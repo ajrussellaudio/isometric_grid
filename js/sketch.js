@@ -3,7 +3,7 @@ function setup() {
   background("#FF00FF");
   angleMode(DEGREES);
   colorMode(HSB);
-  const cellCount = 60;
+  const cellCount = 30;
   const wallDepth = cellCount / 12;
   const cellSize = width * 2 / cellCount;
   const wallHeight = wallDepth * 2;
