@@ -3,9 +3,8 @@ function setup() {
   background("#FF00FF");
   angleMode(DEGREES);
   colorMode(HSB);
-  const cellCount = 30;
-  const wallDepth = cellCount / 12;
-  const cellSize = width * 2 / cellCount;
+  const cellSize = min(width, height) / 12;
+  const wallDepth = cellSize / 12;
   const wallHeight = wallDepth * 2;
   setGradient(0, 0, width, height, color("#FF0081"), color("#8F2AA3"));
   drawWalls(cellSize, wallDepth, wallHeight);
